@@ -1,0 +1,18 @@
+{
+  "name": "testcafe-multi-window",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server public",
+    "test": "npx testcafe chrome --disable-native-automation"
+  },
+  "author": "siimp",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "testcafe": "^3.5.0"
+  }
+}

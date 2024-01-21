@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Index</title>
+</head>
+<body>
+
+<h1>This is index page</h1>
+<a href="other.html" target="_blank">other</a>
+<button onclick="openOther()">open other</button>
+
+
+<script>
+    let childWindow = null
+
+    function something() {
+        console.log('yolo')
+        childWindow.close()
+    }
+
+    function openOther() {
+        childWindow = window.open("other.html")
+        console.log(childWindow)
+    }
+</script>
+</body>
+</html>
