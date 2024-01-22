@@ -6,11 +6,12 @@
 <body>
 
 <h1>This is other page</h1>
-<button onclick="yolo()">test</button>
+<button onclick="otherButtonClick()">other button</button>
 
 <script>
-    function yolo() {
-        self.opener.something()
+    function otherButtonClick() {
+        self.opener.closeOther()
+        self.close()
     }
 </script>
 </body>

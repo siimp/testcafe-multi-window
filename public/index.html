@@ -6,21 +6,17 @@
 <body>
 
 <h1>This is index page</h1>
-<a href="other.html" target="_blank">other</a>
+<a href="other.html" target="_blank">open other</a>
 <button onclick="openOther()">open other</button>
 
 
 <script>
-    let childWindow = null
-
-    function something() {
-        console.log('yolo')
-        childWindow.close()
+    function closeOther() {
+        console.log('button click on other, closing other')
     }
 
     function openOther() {
-        childWindow = window.open("other.html")
-        console.log(childWindow)
+        self.open("other.html", '_blank')
     }
 </script>
 </body>
